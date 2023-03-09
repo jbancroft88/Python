@@ -24,7 +24,7 @@ Estimated time for completion over VPN connection is 2-4 hours, depending on ban
 
 while _undef:
     _usrselect = input("""
-Please enter 2 letter country code of SCCM Distribution server (ie. UK, DE, CH etc.): """).upper()
+Please enter 2 letter country code of SCCM Distribution server (ie. UK, DE, USA etc.): """).upper()
     if _usrselect == "USA":
         _sitedp = "%SERVERNAME%"
         print("You have selected the site 'USA'")
@@ -60,10 +60,6 @@ Please enter 2 letter country code of SCCM Distribution server (ie. UK, DE, CH e
     elif _usrselect == "FR":
         _sitedp = "%SERVERNAME%"
         print("You have selected the site 'France'")
-        _undef = False
-    elif _usrselect == "ZA":
-        _sitedp = "%SERVERNAME%"
-        print("You have selected the site 'South Africa'")
         _undef = False
     elif _usrselect == "UA":
         _sitedp = "%SERVERNAME%"
